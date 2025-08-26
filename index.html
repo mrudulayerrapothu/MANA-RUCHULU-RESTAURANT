@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mana Ruchulu - Restaurant Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: #222;
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    header .logo img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ff9800;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-content h1 {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 5px;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #ff9800;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #e68900;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      border: 2px solid #ff9800;
+      color: #ff9800;
+    }
+
+    .btn-secondary:hover {
+      background: #ff9800;
+      color: white;
+    }
+
+    /* Services Section */
+    .services {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .services h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .service-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .service {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .service img {
+      width: 80px;
+      margin-bottom: 15px;
+    }
+
+    /* Menu Preview */
+    .menu {
+      padding: 50px 20px;
+      text-align: center;
+      background: #fafafa;
+    }
+
+    .menu h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .menu-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .menu-item {
+      display: grid;
+      background: white;
+      
+    }
+
+    .menu-item img {
+      width: 100%;
+      aspect-ratio: 1 / 1 ;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .menu-item h3 {
+      padding: 15px;
+      font-size: 20px;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="C:\Users\HP\OneDrive\Desktop\Restaurant\images\logo.png" alt="Logo">
+      <h2>Mana Ruchulu</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Offers</a></li>
+        <li><a href="#">Delivery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Mana Ruchulu</h1>
+      <p>Enjoy Authentic Telugu Food & More</p>
+      <button class="btn btn-primary">Book a Table</button>
+      <button class="btn btn-secondary">Order Now</button>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-container">
+      <div class="service">
+        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Discounts">
+        <h3>Special Discounts</h3>
+      </div>
+      <div class="service">
+        <img src="https://cdn-icons-png.flaticon.com/512/679/679922.png" alt="Free Delivery">
+        <h3>Free Delivery</h3>
+      </div>
+      <div class="service">
+        <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="Fresh Food">
+        <h3>Fresh & Healthy</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Preview -->
+  <section class="menu">
+    <h2>Explore Our Menu</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="C:\Users\HP\OneDrive\Desktop\Restaurant\images\image1.png" alt="Dish 1">
+        <h3>Andhra Thali</h3>
+      </div>
+      <div class="menu-item">
+        <img src="C:\Users\HP\OneDrive\Desktop\Restaurant\images\chicken briyinai.jpg" alt="Dish 2">
+        <h3>Biryani's</h3>
+      </div>
+      <div class="menu-item">
+        <img src="C:\Users\HP\OneDrive\Desktop\Restaurant\images\image7.png" alt="Dish 3">
+        <h3>Smoothies</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Mana Ruchulu. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
